@@ -19,7 +19,6 @@ export default function Faq() {
           {faqs.map((faq, i) => (
             <details className="faq__item" key={faq.question} name="faqs">
               <summary>
-                <span className="faq__number">0{i + 1}</span>
                 <span>{faq.question}</span>
                 <span className="faq__plus" aria-hidden="true">
                   +
