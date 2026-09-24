@@ -16,7 +16,7 @@ export default function Faq() {
           </p>
         </div>
         <div className="faq__items">
-          {faqs.map((faq, i) => (
+          {faqs.map((faq) => (
             <details className="faq__item" key={faq.question} name="faqs">
               <summary>
                 <span>{faq.question}</span>

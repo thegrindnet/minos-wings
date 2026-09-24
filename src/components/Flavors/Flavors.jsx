@@ -16,7 +16,7 @@ export default function Flavors() {
           </p>
         </div>
         <ul className="flavors__list">
-          {flavors.map((flavor, i) => (
+          {flavors.map((flavor) => (
             <li key={flavor}>
               <h3>{flavor}</h3>
               <span className="flavors__spark" aria-hidden="true">
