@@ -1,0 +1,48 @@
+.about {
+  background: var(--cream);
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about__photo {
+  height: 380px;
+  position: relative;
+}
+.about__photo > .food-photo {
+  border-radius: 4px;
+}
+.about__photo > span {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  background: white;
+  padding: 17px 22px;
+  font-family: cursive;
+  font-style: italic;
+  color: var(--red);
+  font-size: 22px;
+  transform: rotate(-4deg);
+}
+.about__copy > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 15px;
+}
+.about__copy .button {
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .about__grid {
+    gap: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about__photo {
+    height: 300px;
+  }
+}

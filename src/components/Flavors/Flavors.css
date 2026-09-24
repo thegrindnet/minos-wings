@@ -1,0 +1,70 @@
+.flavors__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.flavors__heading > p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.flavors__list {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.flavors__list li {
+  background: var(--red);
+  color: white;
+  padding: 22px 18px;
+  min-height: 145px;
+  position: relative;
+}
+.flavors__number {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  opacity: 0.8;
+}
+.flavors__list h3 {
+  font-size: 29px;
+  max-width: 130px;
+  margin: 22px 0 5px;
+}
+.flavors__spark {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  color: var(--orange);
+}
+.flavors__note {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  .flavors__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .flavors__heading {
+    display: block;
+  }
+  .flavors__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flavors__list li:last-child {
+    grid-column: 1/-1;
+    min-height: 110px;
+  }
+  .flavors__list h3 {
+    font-size: 28px;
+  }
+  .flavors__list li {
+    padding: 18px;
+  }
+}
